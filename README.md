@@ -39,7 +39,7 @@
 
 ## 🚀 Installation
 
-```bash
+
       git clone  https://github.com/oozvc/ziocryptor.git
       cd ziocryptor
       python3 ziocryptor.py

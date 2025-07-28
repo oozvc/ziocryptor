@@ -239,7 +239,7 @@ def backup_file(file_path):
         return False
 
 def main():
-    print(f"\n🔐 Ziole Secure Encryptor {VERSION}")
+    print(f"\n🔐 ziocryptor {VERSION}")
     print(f"🚀 Running on: {platform.platform()}\n")
     
     # Check OS compatibility

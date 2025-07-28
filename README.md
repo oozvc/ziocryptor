@@ -10,6 +10,7 @@
 
 ---
 
+
 ## ✨ Features
 
 - ✅ **Hybrid Encryption** (AES-256 + RSA-4096)
@@ -42,3 +43,10 @@
       git clone  https://github.com/oozvc/ziocryptor.git
       cd ziocryptor
       python3 ziocryptor.py
+
+
+untuk para user indo
+
+Jan di pake buat hack anjir anak kucai yang pake buat hack 
+
+udah gw bikinin bagus bagus rapih pula masa gak di fork heheheh

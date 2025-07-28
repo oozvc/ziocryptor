@@ -1,41 +1,44 @@
+# 🔐 Ziole Secure Encryptor (ZSEC) v10.0 - MultiOS
 
+> Hybrid Encryption Tool built for professionals. Fast, secure, and cross-platform.  
+> Designed by [Ziole Visa Charles](https://github.com/ziolereal) – Creator of Zeno OS.
 
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Python](https://img.shields.io/badge/python-3.8+-brightgreen.svg)
+![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-yellow.svg)
+![Version](https://img.shields.io/badge/version-v10.0--multiOS-purple)
 
-  <header>
-    <h1>🔐 ZioCryptor</h1>
-    <p>Hybrid Encryptor powered by Ziole for professionals 🔥</p>
-  </header>
+---
 
-  <div class="container">
-    <h2>🚀 Why ZioCryptor?</h2>
-    <div class="features">
-      <div class="feature">
-        <h3>Hybrid Encryption</h3>
-        <p>Combines AES-256 + RSA-4096 for unmatched security in both speed and strength.</p>
-      </div>
-      <div class="feature">
-        <h3>Cross-Platform</h3>
-        <p>Runs smoothly on Zeno OS, Linux, and Windows. CLI optimized for Ziole’s ecosystem.</p>
-      </div>
-      <div class="feature">
-        <h3>CLI-First</h3>
-        <p>No GUI, all command-line. Fast, efficient, and scriptable. No BS.</p>
-      </div>
-      <div class="feature">
-        <h3>Chunk-Based Engine</h3>
-        <p>Efficiently handles up to 10GB+ file sizes with built-in chunk processing & tqdm progress bars.</p>
-      </div>
-    </div>
+## ✨ Features
 
-    git clone https://github.com/oozvc/ziocryptor.git
-  </div>
+- ✅ **Hybrid Encryption** (AES-256 + RSA-4096)
+- ✅ **HMAC-SHA256 Integrity Check**
+- ✅ **PBKDF2 Password Key Derivation** (600K iterations)
+- ✅ **Cross-Platform Support** (Windows / Linux / macOS)
+- ✅ **Encrypted Key Storage (optional password)**
+- ✅ **Automatic Backup Before Encryption**
+- ✅ **File Size Support up to 10GB**
+- ✅ **TQDM Progress Bars for UI Clarity**
+- ✅ **Custom Key Folder Support**
+- ✅ **Safe Deletion Prompt (Encrypt/Decrypt)**
 
-  <footer>
-    Developed by Ziole & oozvc © 2025 - All Rights Reserved
-  </footer>
+---
 
-</body>
-</html>
+## 📦 Requirements
 
-# thx for using my program
+- Python `3.8+`
+- Modules:
+  - `cryptography`
+  - `tqdm`
 
+> 📦 If not installed, dependencies will auto-install.
+
+---
+
+## 🚀 Installation
+
+```bash
+      git clonehttps://github.com/oozvc/ziocryptor.git
+      cd ziocryptor
+      python ziocryptor.py

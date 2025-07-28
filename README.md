@@ -1,4 +1,4 @@
-# 🔐 Ziole Secure Encryptor (ZSEC) v10.0 - MultiOS
+# 🔐 ziocryptor v10.0 - MultiOS
 
 > Hybrid Encryption Tool built for professionals. Fast, secure, and cross-platform.  
 > Designed by [Ziole Visa Charles](https://github.com/ziolereal) – Creator of Zeno OS.

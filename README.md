@@ -41,4 +41,4 @@
 ```bash
       git clonehttps://github.com/oozvc/ziocryptor.git
       cd ziocryptor
-      python ziocryptor.py
+      python3 ziocryptor.py

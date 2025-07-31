@@ -41,5 +41,6 @@ Designed for professionals, sysadmins, and power users who demand **maximum secu
       cd ziocryptor
       python3 run.py
 
+you can use test.js for testing
 
 # #ziole tools

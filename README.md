@@ -1,41 +1,41 @@
 # 🔐 ZioleCryptor v13.0 - Enterprise Edition
 
-ZioleCryptor adalah alat enkripsi dan dekripsi file ultra-cepat yang dirancang untuk profesional, sysadmin, dan power users yang butuh **keamanan maksimal**, **fleksibilitas**, dan **otomatisasi**.
-Dibuat oleh **Bhimantara Arsya Dewanto** (aka Ziole Visa Charles).
+ZioleCryptor is an ultra-fast file encryption and decryption tool built for professionals, sysadmins, and power users who demand **maximum security**, **flexibility**, and **automation**.
+Created by **Bhimantara Arsya Dewanto** (aka Ziole Visa Charles).
 
-> 🧠 Hybrid Encryption RSA-4096 + AES-256-GCM, digital signature, integrity verification, dan key revocation built-in.
+> 🧠 Hybrid Encryption with RSA-4096 + AES-256-GCM, digital signature, integrity verification, and built-in key revocation.
 
 ---
 
-## 🚀 Fitur Utama
+## 🚀 Key Features
 
 - ✅ **Hybrid Encryption**: RSA-4096 + AES-256-GCM
-- ✅ **Otomatis kompresi** untuk file >100KB
+- ✅ **Auto compression** for files >100KB
 - ✅ **SHA-256 integrity check**
-- ✅ **Signature PSS** dengan key fingerprint
-- ✅ **Proteksi kunci** via PBKDF2-HMAC-SHA256
-- ✅ **Key Revocation** system built-in
+- ✅ **PSS Signature** with key fingerprint
+- ✅ **Key protection** via PBKDF2-HMAC-SHA256
+- ✅ **Built-in Key Revocation System**
 - ✅ **Dual Mode**: CLI & Interactive UI (TUI)
-- ✅ **Headless mode** buat CI/CD
+- ✅ **Headless mode** for CI/CD pipelines
 - ✅ **Secure Delete** (overwrite 3x + fsync)
-- ✅ **Auto Backup** sebelum enkripsi
-- ✅ **Multithread** encryption
-- ✅ **Deskripsi langsung ke stdout**
+- ✅ **Auto Backup** before encryption
+- ✅ **Multithreaded** encryption
+- ✅ **Decrypt directly to stdout**
 
 ---
 
 ## 📦 Requirements
 
 - Python `3.8+`
-- Modules:
+- Required Modules:
   - `cryptography`
   - `tqdm`
 
-Jika belum terpasang, dependensi akan auto-install.
+If not installed, dependencies will auto-install.
 
 ---
 
-## 🧠 Instalasi
+## 🧠 Installation
 
 ```bash
 git clone https://github.com/oozvc/ziocryptor.git
@@ -46,95 +46,95 @@ python3 run.py
 
 ---
 
-## ⚙️ Cara Penggunaan
+## ⚙️ How to Use
 
-### A. Mode Interaktif (UI CLI)
+### A. Interactive Mode (UI CLI)
 ```bash
 python3 run.py
 ```
-> Tampil UI CLI step-by-step buat milih file, mode, dll.
+> Provides a step-by-step UI CLI to select files, modes, etc.
 
-### B. Mode Otomatis (Headless / CLI) khusus ver 13
+### B. Automatic Mode (Headless / CLI) for ver 13
 ```bash
 python ziocryptor.py -m encrypt -i file.txt -o output/
 ```
 
 ---
 
-## 📌 Argumen Penting
+## 📌 Important Arguments
 
-| Argumen | Fungsi |
-|--------|--------|
-| `-m encrypt/decrypt` | Pilih mode (wajib di headless) |
-| `-i file.txt` | Input file/direktori (multi input juga bisa) |
-| `-o output/` | Direktori output |
-| `--headless` | Matikan mode interaktif |
-| `--no-confirm` | Lewati semua prompt konfirmasi |
-| `--stdout` | Print hasil deskripsi ke terminal |
-| `--revoke-key [FINGERPRINT]` | Cabut kunci tertentu |
+| Argument | Description |
+|----------|-------------|
+| `-m encrypt/decrypt` | Select mode (required in headless) |
+| `-i file.txt` | Input file or directory (multi-input supported) |
+| `-o output/` | Output directory |
+| `--headless` | Disable interactive mode |
+| `--no-confirm` | Skip all confirmation prompts |
+| `--stdout` | Print decrypted content to terminal |
+| `--revoke-key [FINGERPRINT]` | Revoke a specific key |
 
 ---
 
-## 🧪 Contoh Penggunaan
+## 🧪 Example Usage
 
-### 🔒 Enkripsi
+### 🔒 Encrypt
 ```bash
-# File tunggal
-python ziocryptor.py -m encrypt -i rahasia.pdf -o encrypted/
+# Single file encryption
+python ziocryptor.py -m encrypt -i secret.pdf -o encrypted/
 
-# Folder full, otomatis
+# Encrypt full folder, non-interactive
 python ziocryptor.py -m encrypt -i data/ --headless --no-confirm --delete
 ```
 
-### 🔓 Deskripsi
+### 🔓 Decrypt
 ```bash
-# Output ke folder
+# Output to folder
 python ziocryptor.py -m decrypt -i file.enc -o decrypted/
 
-# Output langsung ke terminal
-python ziocryptor.py -m decrypt -i file.enc --stdout > hasil.txt
+# Output to terminal (stdout)
+python ziocryptor.py -m decrypt -i file.enc --stdout > result.txt
 ```
 
-### 🔑 Manajemen Kunci
+### 🔑 Key Management
 ```bash
-# Revoke kunci
+# Revoke key
 python ziocryptor.py --revoke-key i+JPmyv6rFO33Otx
 
-# Lihat semua kunci
+# View all keys
 ls ~/.ziole_keys/
 ```
 
 ---
 
-## 🛠️ Opsi Lanjutan
+## 🛠️ Advanced Options
 
-| Argumen Kombinasi | Fungsi |
-|-------------------|--------|
-| `--shred --delete` | Hapus file asli setelah enkripsi |
-| `--threads 8` | Proses file secara paralel |
-| `--dry-run` | Simulasi tanpa ubah file |
-| `--no-verify` | Lewati verifikasi SHA-256 |
-
----
-
-## 📂 Lokasi Penting
-- 🔐 Kunci disimpan di: `~/.ziole_keys/`
-- 🗃️ Backup file: `~/.ziole_backups/`
-- 📄 Log aktivitas: `~/.ziolecryptor.log`
+| Argument Combination | Function |
+|----------------------|----------|
+| `--shred --delete` | Securely delete original file after encryption |
+| `--threads 8` | Process files in parallel using 8 threads |
+| `--dry-run` | Simulate process without modifying files |
+| `--no-verify` | Skip SHA-256 verification |
 
 ---
 
-## 🔁 Integrasi CI/CD
+## 📂 Important Locations
+- 🔐 Keys stored at: `~/.ziole_keys/`
+- 🗃️ Backup files: `~/.ziole_backups/`
+- 📄 Activity logs: `~/.ziolecryptor.log`
+
+---
+
+## 🔁 CI/CD Integration
 ```bash
-# Enkripsi otomatis di pipeline build
+# Auto encryption in build pipeline
 python ziocryptor.py -m encrypt -i artifacts/ --headless --no-confirm -o encrypted_artifacts/
 ```
 
 ---
 
-## 🧭 Bantuan & Tips
+## 🧭 Help & Tips
 
-Gunakan `python ziocryptor.py --help` untuk semua opsi yang tersedia. Panduan ini mencakup 90% kebutuhan umum. Untuk skenario spesial, tinggal kombinasikan argumen sesuai use-case kamu.
+Use `python ziocryptor.py --help` to view all available options. This guide covers 90% of common use-cases. For more complex workflows, mix and match arguments as needed.
 
 ---
 

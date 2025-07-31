@@ -1,4 +1,4 @@
- 🔐 ZioleCryptor v13.0 - Enterprise Edition
+# 🔐 ZioleCryptor v13.0 - Enterprise Edition
 
 ZioleCryptor is a **powerful, enterprise-grade file encryption tool** created by Bhimantara Arsya Dewanto (aka Ziole Visa Charles).  
 Designed for professionals, sysadmins, and power users who demand **maximum security, flexibility, and automation**.

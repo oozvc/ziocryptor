@@ -60,7 +60,7 @@ python ziocryptor.py -m encrypt -i file.txt -o output/
 
 ---
 
-## 📌 Important Arguments
+## 📌 Important Arguments (v13)
 
 | Argument | Description |
 |----------|-------------|
@@ -76,7 +76,7 @@ python ziocryptor.py -m encrypt -i file.txt -o output/
 
 ## 🧪 Example Usage
 
-### 🔒 Encrypt
+### 🔒 Encrypt (v13)
 ```bash
 # Single file encryption
 python ziocryptor.py -m encrypt -i secret.pdf -o encrypted/
@@ -85,7 +85,7 @@ python ziocryptor.py -m encrypt -i secret.pdf -o encrypted/
 python ziocryptor.py -m encrypt -i data/ --headless --no-confirm --delete
 ```
 
-### 🔓 Decrypt
+### 🔓 Decrypt (13)
 ```bash
 # Output to folder
 python ziocryptor.py -m decrypt -i file.enc -o decrypted/

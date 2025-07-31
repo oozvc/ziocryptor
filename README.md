@@ -1,15 +1,11 @@
-# 🔐 ZioleCryptor v13.0 - Enterprise Edition
+ 🔐 ZioleCryptor v13.0 - Enterprise Edition
 
-> Hybrid Encryption Tool built for professionals. Fast, secure, and cross-platform.  
-> Designed by [Ziole Visa Charles](https://github.com/oozvc) – Creator of Zeno OS.
+ZioleCryptor is a **powerful, enterprise-grade file encryption tool** created by Bhimantara Arsya Dewanto (aka Ziole Visa Charles).  
+Designed for professionals, sysadmins, and power users who demand **maximum security, flexibility, and automation**.
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Python](https://img.shields.io/badge/python-3.8+-brightgreen.svg)
-![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-yellow.svg)
-![Version](https://img.shields.io/badge/version-v10.0--multiOS-purple)
+> 🧠 Secure your files with RSA-4096 + AES-256-GCM hybrid encryption, digital signatures, integrity verification, and key revocation support.
 
 ---
-
 
 ## 🚀 Features
 
@@ -27,7 +23,6 @@
 - ✅ Decrypt directly to `stdout`
 
 ---
-
 ## 📦 Requirements
 
 - Python `3.8+`

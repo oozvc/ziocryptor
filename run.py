@@ -4,14 +4,14 @@ import subprocess
 import platform
 import os
 
-# List of required modules
+
 REQUIRED_MODULES = [
     "cryptography",
     "tqdm"
 ]
 
-# Name of your main program file
-MAIN_PROGRAM_FILE = "ziolecryptor.py"
+
+MAIN_PROGRAM_FILE = "ziocryptor.py"
 
 def check_python_version():
     if sys.version_info < (3, 6):

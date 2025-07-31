@@ -42,8 +42,4 @@ Designed for professionals, sysadmins, and power users who demand **maximum secu
       python3 run.py
 
 
-untuk para user indo
-
-Jan di pake buat hack anjir anak kucai yang pake buat hack 
-
-udah gw bikinin bagus bagus rapih pula masa gak di fork heheheh
+# #ziole tools

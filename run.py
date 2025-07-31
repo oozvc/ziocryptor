@@ -25,7 +25,7 @@ def install_module(module_name):
         print(f"✅ Module already installed: {module_name}")
     except ImportError:
         print(f"📦 Installing module: {module_name} ...")
-        subprocess.check_call([sys.executable, "-m", "pip", "install", module_name , --break-system-packages])
+        subprocess.check_call([sys.executable, "-m", "pip", "install", module_name , "--break-system-packages"])
 
 def install_all_dependencies():
     for module in REQUIRED_MODULES:

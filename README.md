@@ -40,7 +40,6 @@ If not installed, dependencies will auto-install.
 ```bash
 git clone https://github.com/oozvc/ziocryptor.git
 cd ziocryptor
-pip install cryptography tqdm
 python3 run.py
 ```
 
@@ -120,7 +119,8 @@ ls ~/.ziole_keys/
 ## 📂 Important Locations
 - 🔐 Keys stored at: `~/.ziole_keys/`
 - 🗃️ Backup files: `~/.ziole_backups/`
-- 📄 Activity logs: `~/.ziolecryptor.log`
+- 📄 Activity logs: `~/.ziocrptorv13.log`
+- but for v11 is `~/.ziocryptor.conf` for config file and `~/.ziocrptorv13.log` for v13
 
 ---
 

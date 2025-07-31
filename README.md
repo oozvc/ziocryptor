@@ -134,7 +134,7 @@ python ziocryptor.py -m encrypt -i artifacts/ --headless --no-confirm -o encrypt
 
 ## 🧭 Help & Tips
 
-Use `python ziocryptor.py --help` to view all available options. This guide covers 90% of common use-cases. For more complex workflows, mix and match arguments as needed.
+Use `python ziocryptor.py --help` to view all available options. This guide covers 90% of common use-cases. For more complex workflows, mix and match arguments as needed. (v13)
 
 ---
 

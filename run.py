@@ -12,6 +12,7 @@ REQUIRED_MODULES = [
 
 
 MAIN_PROGRAM_FILE = "ziocryptor.py"
+OTHERVER = "v11.0.py"
 
 def check_python_version():
     if sys.version_info < (3, 6):
@@ -35,6 +36,14 @@ def prompt_and_run():
     print("\n✅ All dependencies installed successfully.")
     answer = input("Do you want to run ZioleCryptor now? (y/n): ").lower()
     if answer == 'y':
+        answer = input("Do you want to run ZioleCryptor v11 or v13 (11/13): ").lower()
+        if answer == '11':
+            print("\n🚀 Running ZioleCryptor...")
+        try:
+            subprocess.run([sys.executable, OTHERVER])
+        except FileNotFoundError:
+            print(f"❌ Error: '{OTHERVER}' not found.")
+    if answer == '13':
         print("\n🚀 Running ZioleCryptor...")
         try:
             subprocess.run([sys.executable, MAIN_PROGRAM_FILE])

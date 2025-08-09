@@ -1,7 +1,7 @@
 # 🔐 ZioleCryptor v13.0 & v11.0 - Enterprise Edition
 
 ZioleCryptor is an ultra-fast file encryption and decryption tool built for professionals, sysadmins, and power users who demand **maximum security**, **flexibility**, and **automation**.
-Created by **Bhimantara Arsya Dewanto** (aka Ziole Visa Charles).
+Created by **Ziole Visa Charles** .
 
 > 🧠 Hybrid Encryption with RSA-4096 + AES-256-GCM, digital signature, integrity verification, and built-in key revocation.
 
